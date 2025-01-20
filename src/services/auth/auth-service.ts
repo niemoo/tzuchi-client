@@ -18,6 +18,7 @@ export async function loginService({ email, password }: LoginParam) {
         password: password,
       }),
     });
+
     const data = await response.json();
 
     if (response.ok) {
